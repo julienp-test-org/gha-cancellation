@@ -17,4 +17,6 @@ jobs:
 
       - name: Run a one-line script
         timeout-minutes: 1
-        run: exec make deploy
+        run: |
+          COMMAND="make deploy"
+          exec $COMMAND
