@@ -1,0 +1,2 @@
+deploy:
+	./scripts/entrypoint.sh
