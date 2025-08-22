@@ -1,2 +1,2 @@
 deploy:
-	./scripts/entrypoint.sh
+	exec ./scripts/entrypoint.sh
