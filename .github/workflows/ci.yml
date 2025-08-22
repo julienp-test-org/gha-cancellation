@@ -16,4 +16,4 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run a one-line script
-        run: ./wrapper.sh
+        run: ./scripts/wrapper.sh
