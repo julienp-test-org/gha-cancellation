@@ -1,6 +1,9 @@
 #!/bin/bash
 
-pulumi preview &
+pulumi login --local
+export PULUMI_CONFIG_PASSPHRASE=
+pulumi stack init test
+pulumi preview -s test &
 PULUMI_PID=$!
 echo PULUMI_PID=${PULUMI_PID}
 intr_pulumi() {
