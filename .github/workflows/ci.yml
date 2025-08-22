@@ -16,4 +16,5 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run a one-line script
-        run: ./scripts/wrapper.sh
+        timeout-minutes: 1
+        run: make deploy
