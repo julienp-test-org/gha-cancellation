@@ -18,5 +18,4 @@ jobs:
       - name: Run a one-line script
         timeout-minutes: 1
         run: |
-          export TRACING=file=./update.trace
           exec ./scripts/deploy.sh
