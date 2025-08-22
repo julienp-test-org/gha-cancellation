@@ -3,6 +3,7 @@
 pulumi login --local
 export PULUMI_CONFIG_PASSPHRASE=
 pulumi stack init test
+pulumi install
 pulumi preview -s test &
 PULUMI_PID=$!
 echo PULUMI_PID=${PULUMI_PID}
